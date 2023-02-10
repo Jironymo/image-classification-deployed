@@ -1,0 +1,13 @@
+# see more at: https://github.com/amesar/mlflow-examples/blob/master/python/pytorch/
+
+name: project_mlflow
+
+channels:
+  - defaults
+dependencies:
+  - python>=3.8
+  - pip:
+    - mlflow[extras]
+    - torch>=1.6.0
+    - torchvision>=0.7.0
+    - pytorch-lightning>=1.0.2

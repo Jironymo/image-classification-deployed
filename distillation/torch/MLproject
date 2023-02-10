@@ -1,0 +1,12 @@
+# see more at https://github.com/amesar/mlflow-examples/blob/master/python/pytorch/
+
+name: mlflow-examples-pytorch
+
+conda_env: conda.yaml
+
+entry_points:
+  main:
+    parameters:
+      epochs:      {type: int, default: 2}
+    command: "python torch_train.py
+                --epochs {epochs}"
